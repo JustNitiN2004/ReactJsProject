@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+  background:  rgb(27, 25, 25);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(27, 25, 25);
+  font-weight: 500;
+  color: #fafafa;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.auth-buttons .btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  color: white;
+}
+
+.btn-dark {
+  background: black;
+  color: white;
+}
+
+.content-container {
+  padding: 20px;
+  text-align: center;
+  margin-left: 370px;
+  margin-top: -570px;
+}
+
+
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar & Sidebar Styling */
+
+
+.dark-mode .navbar {
+  background-color: #1f1f1f; /* Dark theme color */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  background-color: #343a40; /* Default dark sidebar */
+  color: white;
+  overflow-y: auto;
+}
+
+.dark-mode .sidebar {
+  background-color: #1c1c1c; /* Dark mode sidebar */
+  color: white;
+}
+
+/* Theme Button */
+.btn-light {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode .btn-light {
+  background-color: #333;
+  color: #fff;
+}
